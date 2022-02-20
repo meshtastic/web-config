@@ -1,10 +1,10 @@
 {
-  "name": "@meshtastic/config",
-  "version": "1.0.6",
+  "name": "@meshtastic/eslint-config",
+  "version": "1.0.5",
   "description": "",
   "license": "GPL-3.0-only",
   "exports": {
-    "./eslint": "./.eslintrc.cjs",
+    ".": "./.eslintrc.cjs",
     "./prettier": "./.prettierrc.cjs"
   },
   "repository": {

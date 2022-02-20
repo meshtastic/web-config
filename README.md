@@ -1,6 +1,6 @@
-# Meshtastic.js
+# Meshtastic Web Config
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/meshtastic/web-config) ![NPM](https://badgen.net/npm/v/@meshtastic/config) ![Downloads](https://badgen.net/npm/dt/@meshtastic/config) [![CI](https://github.com/meshtastic/web-config/actions/workflows/ci.yml/badge.svg)](https://github.com/meshtastic/web-config/actions/workflows/ci.yml)
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/meshtastic/web-config) ![NPM](https://badgen.net/npm/v/@meshtastic/eslint-config) ![Downloads](https://badgen.net/npm/dt/@meshtastic/eslint-config) [![CI](https://github.com/meshtastic/web-config/actions/workflows/ci.yml/badge.svg)](https://github.com/meshtastic/web-config/actions/workflows/ci.yml)
 
 ## Overview
 
@@ -8,25 +8,30 @@ This package includes configurations for [ESLint](https://eslint.org/) and [Pret
 
 ## Installation & Usage
 
-The library is available from [NPM](https://www.npmjs.com/package/@meshtastic/config) and can be installed with:
+The library is available from [NPM](https://www.npmjs.com/package/@meshtastic/eslint-config) and can be installed with:
 
 ```bash
-pnpm add @meshtastic/config
+pnpm add @meshtastic/eslint-config
 ```
 
-Create a ESLint configuration file in your project root directory with the following content:
+Create ESLint and Prettier configuration files in your project root directory with the following content:
 
 ```js
 // .eslintrc.cjs
 
 module.exports = {
-  extends: '@meshtastic/config/eslint',
+  extends: '@meshtastic/eslint-config',
   parserOptions: {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.json'],
   },
 };
+```
 
+```js
+// .prettierrc
+
+"@meshtastic/eslint-config/prettier"
 ```
 
 It is recommended to setup linting as a requirement before comitting:
