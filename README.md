@@ -19,6 +19,7 @@ Create ESLint and Prettier configuration files in your project root directory wi
 ```js
 // .eslintrc.cjs
 
+/** @type {import("eslint").Linter.Config} */
 module.exports = {
   extends: '@meshtastic/eslint-config',
   parserOptions: {
