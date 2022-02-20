@@ -1,14 +1,11 @@
 {
-  "name": "@meshtastic/eslint-config",
-  "version": "1.0.4",
+  "name": "@meshtastic/config",
+  "version": "1.0.6",
   "description": "",
   "license": "GPL-3.0-only",
   "exports": {
-    ".": "./.eslintrc.cjs",
+    "./eslint": "./.eslintrc.cjs",
     "./prettier": "./.prettierrc.cjs"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
