@@ -11,7 +11,7 @@ This package includes configurations for [ESLint](https://eslint.org/) and [Pret
 The library is available from [NPM](https://www.npmjs.com/package/@meshtastic/eslint-config) and can be installed with:
 
 ```bash
-pnpm add @meshtastic/eslint-config
+pnpm add @meshtastic/eslint-config prettier
 ```
 
 Create ESLint and Prettier configuration files in your project root directory with the following content:
@@ -35,7 +35,7 @@ module.exports = {
 "@meshtastic/eslint-config/prettier"
 ```
 
-It is recommended to setup linting as a requirement before comitting:
+It is recommended to setup a format/linting script:
 
 ```json
 // package.json
@@ -43,7 +43,4 @@ It is recommended to setup linting as a requirement before comitting:
 "scripts": {
   "format": "prettier --write 'src/**/*.{ts,tsx}' && eslint src/*.{ts,tsx}"
 },
-"pre-commit": [
-  "format"
-],
 ```
